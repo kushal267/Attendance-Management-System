@@ -1,7 +1,7 @@
 # Face Identification and Attendance Management System
 
 <p align="center">
-  <img src="screenshots/main_gui.png" width="900">
+  <img src="Screenshots/dashboard.png" width="900">
 </p>
 
 ## Overview
