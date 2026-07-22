@@ -1,0 +1,31 @@
+# PyInstaller Build Folders
+build/
+dist/
+
+# Inno Setup Output
+Output/
+
+# Python Cache
+__pycache__/
+*.pyc
+*.spec
+
+# Local Database & User Data 
+Face_Attendance_Data/
+*.db
+*.sqlite3
+
+# Executables
+*.exe
+
+# Virtual Environment
+env/
+.venv/
+
+# IDE Settings (VS Code / PyCharm)
+.vscode/
+.idea
+
+
+*.xlsx
+*.pkl
