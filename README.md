@@ -86,7 +86,6 @@ Excel Export or reset attendance
 ## Main Dashboard
 
 ![Dashboard](Screenshots/dashboard.png)
-![Dashboard](screenshots/dashboard.png)
 
 The main dashboard provides a user-friendly graphical interface for managing the complete face identification and attendance process.
 
@@ -105,42 +104,131 @@ The dashboard acts as the central control panel of the application and allows th
 
 ![Registration](Screenshots/registration.png)
 
-The administrator registers a new student by clicking register button and the system automatically captures facial images
+During registration, the administrator enters the student's name and initiates the registration process.
+
+### Working Process:
+1. a window opens asking for name of student
+2. The webcam is activated automatically.
+3. Multiple facial images are captured from different angles.
+4. A separate folder is automatically created for every registered student.
+5. Images are stored inside the student_name folder inside dataset folder .
+6. Registration information is stored in the database.
+
+This process helps improve recognition accuracy by collecting multiple facial samples under different facial expressions and orientations.
+
+The administrator registers a new student by clicking register button and the system automatically captures facial images after writing name of student 
 
 ## Model Training
 
-![Training](screenshots/training.png)
+![Training](Screenshots/training.png)
+
+### Training Process:
+1. Dataset images are loaded.
+2. DeepFace extracts facial embeddings.
+3. Embeddings are converted into numerical feature vectors.
+4. The trained model is generated and saved as:
+face_model.pkl
 
 Facial embeddings are generated and stored inside the trained model.
 
 ## Real-Time Identification
 
-![Recognition](screenshots/recognition.png)
+![Recognition](Screenshots/recognition.png)
 
-The system performs real-time face recognition and automatically marks attendance.
+This module performs live face recognition using the webcam.
 
-## Attendance Database
+### Working Process:
+1. Video frames are continuously captured.
+2. Faces are detected in real time.
+3. DeepFace generates embeddings for detected faces.
+4. Embeddings are compared with stored user embeddings.
+5. The matched user's name is displayed.
+6. Attendance is automatically recorded.
 
-![Attendance](screenshots/attendance.png)
+### Additional Features:
+- Unknown person detection
+- Duplicate attendance prevention
+- Automatic camera handling
+- Real-time processing
 
-Attendance records can be viewed directly from the application.
+This provides a completely contactless attendance mechanism.
+
+
+## Stopping Identification
+![Attendance](Screenshots/attendance.png) 
+
+The idenfication can be stopped by closing eyes for 2 second and also by clicking stop identification button 
+After which it shows popup of  "Attendance Marked"
+
+## View Attendance Records
+
+![Attendance](Screenshots/view_attendance.png)
+
+The administrator can view attendance records directly from the application.
+
+### Displayed Information:
+- Student Name
+- Date
+- Time
+- Attendance Status
+
+### Features:
+- Easy attendance monitoring
+- Database integration
+- Instant record retrieval
+
+This module helps administrators manage attendance efficiently.
 
 ## Excel Export
 
-![Export](screenshots/export_excel.png)
+![Export_Excel](screenshots/export_excel.png)
 
-Attendance reports can be exported to Excel format.
+Attendance records can be exported to Microsoft excel with proper date format."C:\Users\Documents\Face_Attendance_Data\attendance\Attendance_17-07-2026.csv"
+### Features:
+- Automatic report generation
+- Date and time preservation
+- Printable reports
+- Easy sharing and documentation
+
+Generated reports are useful for maintaining official attendance records.
+
+## Reset Attendance
+
+![Reset Attendance](Screenshots/reset_attendance.png)
+
+The system allows administrators to clear attendance records whenever required.
+
+### Features:
+- Confirmation before deletion
+- Prevents accidental data loss
+- Fresh attendance session creation
+
+This functionality is useful for managing daily attendance cycles.
 
 # Automatic Data Storage
+![Folder Structure](Screenshots/folder_structure.png)
+
+The application automatically creates all required directories during execution.
+
+### Generated Structure:
 
 ```text
-Face_Attendance_Data/
+Face_Identification_System/
 │
-├── attendance/
-├── database/
 ├── dataset/
+├── database/
+├── attendance/
+├── exports/
 └── face_model.pkl
 ```
+
+### Advantages:
+- No manual configuration required
+- Easy deployment
+- Better project organization
+- Simplified maintenance
+
+This makes the application highly portable and user friendly.
 
 # Installation
 
