@@ -11,6 +11,12 @@ An AI-powered desktop application developed using Python for real-time face iden
 The system allows users to register faces, train deep learning embeddings, perform real-time recognition, and generate attendance reports in Excel format.
 
 ---
+## Windows Installer
+
+Download latest installer from:
+
+👉 https://github.com/kushal267/Attendance-Management-System/releases
+
 
 ## Key Features
 
@@ -261,7 +267,7 @@ A professional Windows installer has been created using:
 
 Installer can be downloaded from:
 
-👉 Releases Section
+👉 Releases Section or https://github.com/kushal267/Attendance-Management-System/releases
 
 ---
 
