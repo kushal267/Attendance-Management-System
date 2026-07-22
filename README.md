@@ -121,7 +121,7 @@ The administrator registers a new student by clicking register button and the sy
 ## Model Training
 
 ![Training](Screenshots/training.png)
-
+![Training Complete](Screenshots/training_complete.png)
 ### Training Process:
 1. Dataset images are loaded.
 2. DeepFace extracts facial embeddings.
