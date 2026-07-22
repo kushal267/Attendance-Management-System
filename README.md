@@ -181,7 +181,7 @@ This module helps administrators manage attendance efficiently.
 
 ## Excel Export
 
-![Export_Excel](screenshots/export_excel.png)
+![Export_Excel](Screenshots/export_excel.png)
 
 Attendance records can be exported to Microsoft excel with proper date format."C:\Users\Documents\Face_Attendance_Data\attendance\Attendance_17-07-2026.csv"
 ### Features:
