@@ -54,9 +54,9 @@ Model Training
           ↓
 Real-Time Recognition
           ↓
-Attendance Recording
+Attendance marked
           ↓
-Excel Export
+Excel Export or reset attendance 
 ```
 
 ---
@@ -85,13 +85,27 @@ Excel Export
 # Application Screenshots
 ## Main Dashboard
 
-![Main GUI](screenshots/main_gui.png)
+![Dashboard](Screenshots/dashboard.png)
+![Dashboard](screenshots/dashboard.png)
+
+The main dashboard provides a user-friendly graphical interface for managing the complete face identification and attendance process.
+
+### Features Available:
+- Register New Student
+- Train Face Recognition Model
+- Start Real-Time Identification
+- Stop Identification Process manually (or by closing eyes for 2 second)
+- View Attendance Records
+- Export Attendance to Excel
+- Reset Attendance 
+
+The dashboard acts as the central control panel of the application and allows the administrator to perform all operations from a single window.
 
 ## Student Registration
 
-![Registration](screenshots/registration.png)
+![Registration](Screenshots/registration.png)
 
-The administrator registers a new student and the system automatically captures facial images.
+The administrator registers a new student by clicking register button and the system automatically captures facial images
 
 ## Model Training
 
